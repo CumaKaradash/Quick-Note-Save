@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hızlı Notlarım</h1>
+      <button id="clearAll" title="Tümünü Temizle">🗑️</button>
+    </header>
+
+    <main id="notesList">
+      <!-- Notlar buraya dinamik olarak eklenecek -->
+    </main>
+
+    <template id="noteTemplate">
+      <div class="note-card">
+        <div class="note-content">
+          <p class="note-text"></p>
+          <a class="note-url" target="_blank">Kaynağa Git</a>
+          <span class="note-date"></span>
+        </div>
+        <button class="delete-btn" title="Sil">✕</button>
+      </div>
+    </template>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

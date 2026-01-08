@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Note & Save",
+  "version": "1.0",
+  "description": "Web sayfalarından hızlıca notlar alın ve saklayın.",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  },
+}
